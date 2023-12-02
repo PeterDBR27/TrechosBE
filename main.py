@@ -77,8 +77,8 @@ def formatar_tempo(minutos):
 
 def agendar_proximo_tweet():
     agora = datetime.datetime.now(pytz.timezone("America/Sao_Paulo"))
-    proximo_meio_dia = agora.replace(hour=12, minute=0, second=0, microsecond=0)
-    proximo_seis_horas = agora.replace(hour=18, minute=0, second=0, microsecond=0)
+    proximo_meio_dia = agora.replace(hour=21, minute=45, second=0, microsecond=0)
+    proximo_seis_horas = agora.replace(hour=21, minute=45, second=0, microsecond=0)
 
     if agora < proximo_meio_dia:
         espera_segundos = (proximo_meio_dia - agora).total_seconds()
